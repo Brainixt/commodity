@@ -1,0 +1,899 @@
+<div class="nifty" style="background: #ffcdd2; border: 1px solid #c62828; color: #b71c1c;">
+MCX MARKET: 33639.28 | Change: -143.69 | Change %: -0.43% | Market: DOWN strongly | 15M: -0.09% MILD_DOWN | B: 0.60 | S: 1.00
+</div>
+
+<div class="controls">
+
+<input
+    type="text"
+    id="search"
+    placeholder="Search Commodity"
+    onkeyup="applyFilters()"
+>
+
+<select id="expiryFilter" onchange="applyFilters()">
+    <option value="CURRENT" selected>Current</option>
+    <option value="NEXT">Next</option>
+    <option value="FAR">Far</option>
+    <option value="ALL">All Expiries</option>
+</select>
+
+<select id="rowLimit" onchange="applyFilters()">
+    <option value="3">3 Rows</option>
+    <option value="5" selected>5 Rows</option>
+    <option value="10">10 Rows</option>
+    <option value="15">15 Rows</option>
+    <option value="20">20 Rows</option>
+    <option value="ALL">All Rows</option>
+</select>
+
+</div>
+
+<!-- ── BUY SIDE (LONG & COVER) ───────────────────────────────────────────── -->
+<div class="section market-side-section" style="margin-bottom: 24px;">
+  <div class="section-banner long-title" style="padding: 10px 14px; background: #e8f5e9; border: 1px solid #81c784; border-left: 5px solid #2e7d32; border-radius: 6px; font-weight: 700; color: #1b5e20; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+    <span>&#9650; BUY SIDE &nbsp;— LONG &amp; COVER &nbsp;&nbsp;<span style="font-size: 12px; font-weight: 600; color: #2e7d32;">(Market Score: 0.60)</span></span>
+  </div>
+  <table id="buyTable" class="market-signal-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(this, 0)" style="width: 120px">Share Name</th>
+        <th onclick="sortTable(this, 1)">Spot</th>
+        <th onclick="sortTable(this, 2)">OI%Change Yesterday</th>
+        <th onclick="sortTable(this, 3)">OI%Change Last Query</th>
+        <th onclick="sortTable(this, 4)">Signal</th>
+        <th onclick="sortTable(this, 5)">Last Signal</th>
+        <th onclick="sortTable(this, 6)" title="OI-based Share Score">OI Score</th>
+        <th onclick="sortTable(this, 7)" title="Commodity Quantitative Score, normalized from 5 to 10">Score QGVT</th>
+        <th onclick="sortTable(this, 8)" title="AI Quantitative Score, normalized from 5 to 10">Score AI Quant</th>
+        <th onclick="sortTable(this, 9)" title="Final Score = OI Score × Score QGVT × Score AI Quant × Market Score / 1000">Final Score</th>
+        <th onclick="sortTable(this, 10)" title="15M Standard Pivot Points Channel (S3 to R3) with 7 coloured levels">Pivot Point</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+
+        <td>CARDAMOM</td>
+        <td>3370.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">9.6</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">9.6</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">5.53</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">071.01</span>
+              <div class="pivot-detail-tooltip">S3: 3223.00 | S2: 3262.00 | S1: 3292.00 | P: 3331.00 | R1: 3361.00 | R2: 3400.00 | R3: 3430.00</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(18.8% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(52.2% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(85.5% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(71.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 3223.00</span>
+                <span class="cur-price-highlight">₹3370.00</span>
+                <span>R3: 3430.00</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>KAPAS</td>
+        <td>1662.50</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">10.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.1</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">4.26</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 1612.64 | S2: 1629.26 | S1: 1645.88 | P: 1662.50 | R1: 1679.12 | R2: 1695.74 | R3: 1712.36</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 1612.64</span>
+                <span class="cur-price-highlight">₹1662.50</span>
+                <span>R3: 1712.36</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>STEELREBAR</td>
+        <td>48330.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">10.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.1</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">4.26</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 46880.10 | S2: 47363.40 | S1: 47846.70 | P: 48330.00 | R1: 48813.30 | R2: 49296.60 | R3: 49779.90</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 46880.10</span>
+                <span class="cur-price-highlight">₹48330.00</span>
+                <span>R3: 49779.90</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>COTTON</td>
+        <td>28500.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">10.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.1</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">4.26</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 27645.00 | S2: 27930.00 | S1: 28215.00 | P: 28500.00 | R1: 28785.00 | R2: 29070.00 | R3: 29355.00</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 27645.00</span>
+                <span class="cur-price-highlight">₹28500.00</span>
+                <span>R3: 29355.00</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>RUBBER</td>
+        <td>100.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">10.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">6.5</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">3.90</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 97.00 | S2: 98.00 | S1: 99.00 | P: 100.00 | R1: 101.00 | R2: 102.00 | R3: 103.00</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 97.00</span>
+                <span class="cur-price-highlight">₹100.00</span>
+                <span>R3: 103.00</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>CPO</td>
+        <td>1337.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-LONG">
+            LONG
+        </td>
+
+        <td class="signal-LONG">LONG</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">10.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">6.5</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">3.90</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 1296.89 | S2: 1310.26 | S1: 1323.63 | P: 1337.00 | R1: 1350.37 | R2: 1363.74 | R3: 1377.11</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 1296.89</span>
+                <span class="cur-price-highlight">₹1337.00</span>
+                <span>R3: 1377.11</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>ALUMINIUM</td>
+        <td>366.00</td>
+
+        <td>
+            2.23%
+        </td>
+
+        <td>
+            0.10%
+        </td>
+
+        <td class="signal-COVER">
+            COVER
+        </td>
+
+        <td class="signal-COVER">COVER</td>
+
+        <td>6.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">8.3</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">5.0</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: green;">1.49</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 355.02 | S2: 358.68 | S1: 362.34 | P: 366.00 | R1: 369.66 | R2: 373.32 | R3: 376.98</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#15803d;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 355.02</span>
+                <span class="cur-price-highlight">₹366.00</span>
+                <span>R3: 376.98</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+    </tbody>
+  </table>
+</div>
+
+<!-- ── SELL SIDE (SHORT & UNWIND) ───────────────────────────────────────────── -->
+<div class="section market-side-section">
+  <div class="section-banner short-title" style="padding: 10px 14px; background: #ffebee; border: 1px solid #e57373; border-left: 5px solid #c62828; border-radius: 6px; font-weight: 700; color: #b71c1c; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+    <span>&#9660; SELL SIDE &nbsp;— SHORT &amp; UNWIND &nbsp;&nbsp;<span style="font-size: 12px; font-weight: 600; color: #c62828;">(Market Score: 1.00)</span></span>
+  </div>
+  <table id="sellTable" class="market-signal-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(this, 0)" style="width: 120px">Share Name</th>
+        <th onclick="sortTable(this, 1)">Spot</th>
+        <th onclick="sortTable(this, 2)">OI%Change Yesterday</th>
+        <th onclick="sortTable(this, 3)">OI%Change Last Query</th>
+        <th onclick="sortTable(this, 4)">Signal</th>
+        <th onclick="sortTable(this, 5)">Last Signal</th>
+        <th onclick="sortTable(this, 6)" title="OI-based Share Score">OI Score</th>
+        <th onclick="sortTable(this, 7)" title="Commodity Quantitative Score, normalized from 5 to 10">Score QGVT</th>
+        <th onclick="sortTable(this, 8)" title="AI Quantitative Score, normalized from 5 to 10">Score AI Quant</th>
+        <th onclick="sortTable(this, 9)" title="Final Score = OI Score × Score QGVT × Score AI Quant × Market Score / 1000">Final Score</th>
+        <th onclick="sortTable(this, 10)" title="15M Standard Pivot Points Channel (S3 to R3) with 7 coloured levels">Pivot Point</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+
+        <td>SILVER</td>
+        <td>236822.00</td>
+
+        <td>
+            12.00%
+        </td>
+
+        <td>
+            0.12%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">7.1</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">10.0</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">7.10</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 229717.34 | S2: 232085.56 | S1: 234453.78 | P: 236822.00 | R1: 239190.22 | R2: 241558.44 | R3: 243926.66</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 229717.34</span>
+                <span class="cur-price-highlight">₹236822.00</span>
+                <span>R3: 243926.66</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>GOLD</td>
+        <td>149494.00</td>
+
+        <td>
+            0.54%
+        </td>
+
+        <td>
+            0.05%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">6.7</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">9.5</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">6.37</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 145009.18 | S2: 146504.12 | S1: 147999.06 | P: 149494.00 | R1: 150988.94 | R2: 152483.88 | R3: 153978.82</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 145009.18</span>
+                <span class="cur-price-highlight">₹149494.00</span>
+                <span>R3: 153978.82</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>LEAD</td>
+        <td>199.15</td>
+
+        <td>
+            15.73%
+        </td>
+
+        <td>
+            -0.16%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">6.7</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">9.2</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">6.16</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 193.18 | S2: 195.17 | S1: 197.16 | P: 199.15 | R1: 201.14 | R2: 203.13 | R3: 205.12</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 193.18</span>
+                <span class="cur-price-highlight">₹199.15</span>
+                <span>R3: 205.12</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>NICKEL</td>
+        <td>1662.10</td>
+
+        <td>
+            -0.70%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">5.6</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">8.6</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">4.82</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 1612.24 | S2: 1628.86 | S1: 1645.48 | P: 1662.10 | R1: 1678.72 | R2: 1695.34 | R3: 1711.96</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 1612.24</span>
+                <span class="cur-price-highlight">₹1662.10</span>
+                <span>R3: 1711.96</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>COPPER</td>
+        <td>1218.50</td>
+
+        <td>
+            -3.22%
+        </td>
+
+        <td>
+            0.27%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">5.6</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.4</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">4.14</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 1181.96 | S2: 1194.14 | S1: 1206.32 | P: 1218.50 | R1: 1230.68 | R2: 1242.86 | R3: 1255.04</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 1181.96</span>
+                <span class="cur-price-highlight">₹1218.50</span>
+                <span>R3: 1255.04</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>MENTHAOIL</td>
+        <td>1123.00</td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">5.6</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.0</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">3.92</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 1089.31 | S2: 1100.54 | S1: 1111.77 | P: 1123.00 | R1: 1134.23 | R2: 1145.46 | R3: 1156.69</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 1089.31</span>
+                <span class="cur-price-highlight">₹1123.00</span>
+                <span>R3: 1156.69</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>CRUDEOIL</td>
+        <td>8523.00</td>
+
+        <td>
+            26.94%
+        </td>
+
+        <td>
+            -2.38%
+        </td>
+
+        <td class="signal-SHORT">
+            SHORT
+        </td>
+
+        <td class="signal-SHORT">SHORT</td>
+
+        <td>10.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">5.0</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">7.5</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">3.75</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 8267.31 | S2: 8352.54 | S1: 8437.77 | P: 8523.00 | R1: 8608.23 | R2: 8693.46 | R3: 8778.69</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 8267.31</span>
+                <span class="cur-price-highlight">₹8523.00</span>
+                <span>R3: 8778.69</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>NATURALGAS</td>
+        <td>242.70</td>
+
+        <td>
+            -7.80%
+        </td>
+
+        <td>
+            2.10%
+        </td>
+
+        <td class="signal-UNWIND">
+            UNWIND
+        </td>
+
+        <td class="signal-UNWIND">UNWIND</td>
+
+        <td>6.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">7.7</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">6.2</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">2.86</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 235.41 | S2: 237.84 | S1: 240.27 | P: 242.70 | R1: 245.13 | R2: 247.56 | R3: 249.99</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 235.41</span>
+                <span class="cur-price-highlight">₹242.70</span>
+                <span>R3: 249.99</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+        <tr>
+
+        <td>ZINC</td>
+        <td>336.20</td>
+
+        <td>
+            -4.08%
+        </td>
+
+        <td>
+            0.00%
+        </td>
+
+        <td class="signal-UNWIND">
+            UNWIND
+        </td>
+
+        <td class="signal-UNWIND">UNWIND</td>
+
+        <td>6.0</td>
+
+        <td><span class="score-badge score-mid" title="Commodity Quantitative Score (5-10)">7.1</span></td>
+
+        <td><span class="score-badge score-mid" title="AI Quantitative Score (5-10)">5.9</span></td>
+
+        <td style="font-weight: bold; font-size: 1.1em; color: red;">2.51</td>
+
+        <td class="pivot-cell">
+            <div class="pivot-graph-wrap" tabindex="0">
+              <span style="display:none">050.00</span>
+              <div class="pivot-detail-tooltip">S3: 326.12 | S2: 329.48 | S1: 332.84 | P: 336.20 | R1: 339.56 | R2: 342.92 | R3: 346.28</div>
+              <div class="pivot-track">
+                <div class="pivot-pipe" style="left:0px; background:#991b1b;"></div>
+                <div class="pivot-pipe" style="left:calc(16.7% - 1px); background:#dc2626;"></div>
+                <div class="pivot-pipe" style="left:calc(33.3% - 1px); background:#f87171;"></div>
+                <div class="pivot-pipe" style="left:calc(50.0% - 1px); background:#64748b;"></div>
+                <div class="pivot-pipe" style="left:calc(66.7% - 1px); background:#4ade80;"></div>
+                <div class="pivot-pipe" style="left:calc(83.3% - 1px); background:#16a34a;"></div>
+                <div class="pivot-pipe" style="right:0px; background:#15803d;"></div>
+                <div class="pivot-ball" style="left:calc(50.0% - 5.5px); background:#dc2626;"></div>
+              </div>
+              <div class="pivot-hover-price-line">
+                <span>S3: 326.12</span>
+                <span class="cur-price-highlight">₹336.20</span>
+                <span>R3: 346.28</span>
+              </div>
+            </div>
+            </td>
+
+        </tr>
+        
+    </tbody>
+  </table>
